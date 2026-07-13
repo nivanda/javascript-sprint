@@ -1,5 +1,7 @@
 function createPerson(firstName, lastName, age) {
-    this.firstName = firstName
-    this.lastName = lastName
-    this.age = age
+    return {
+        firstName: firstName,
+        lastName: lastName,
+        age: age
+    }
 }
