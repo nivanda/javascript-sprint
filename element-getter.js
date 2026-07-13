@@ -21,7 +21,7 @@ function getLastElement(par) {
 }
 
 function getElementByIndex(par, index) {
-    const checkedParms = checkParms(par)
+    const checkedParms = checkParms(par, index)
     if (checkedParms.par == 1 && checkedParms.index) {
         return par.charAt(index)
     }
