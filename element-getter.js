@@ -12,7 +12,7 @@ function getFirstElement(par) {
 function getLastElement(par) {
     const checkedParms = checkParms(par)
     if (checkedParms.par == 1) {
-        return par.charAt(par.length() - 1)
+        return par.charAt(par.length - 1)
     }
     if (checkedParms.par = 2) {
         return par[par.length - 1]
