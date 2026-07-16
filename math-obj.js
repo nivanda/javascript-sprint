@@ -28,8 +28,8 @@ const mathObj = {
     },
     max(x, y) {
         if (x > y) {
-            return y
+            return x
         }
-        return x
+        return y
     }
 }
