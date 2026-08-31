@@ -12,6 +12,17 @@ function printPrettyDate(date) {
     if (hours == 0) {
         hours = 12
     }
+    if (hours > 0 && hours < 10) {
+        hours = "0" + hours
+    }
+    let minutes = date.getMinutes()
+    if (minutes < 10) {
+        minutes = "0" + minutes
+    }
+    let seconds = date.getSeconds()
+    if (seconds < 10) {
+        seconds = "0" + seconds
+    }
     const outString = "Today is " + 
             days[date.getDay()] + 
             ", " + 
@@ -23,9 +34,9 @@ function printPrettyDate(date) {
             ", and the time is " +
             hours +
             ":" +
-            date.getMinutes() +
+            minutes +
             ":" +
-            date.getSeconds() +
+            seconds +
             " " +
             AMPM
     console.log(outString)
