@@ -30,5 +30,3 @@ function printPrettyDate(date) {
             AMPM
     return outString
 }
-
-console.log(printPrettyDate(new Date()))
