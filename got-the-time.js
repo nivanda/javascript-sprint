@@ -2,7 +2,7 @@ function printPrettyDate(date) {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
     const OGHours = date.getHours()
-    const AMPM = ""
+    let AMPM = ""
     if (OGHours > 11) {
         AMPM = "PM"
     } else {
@@ -12,7 +12,7 @@ function printPrettyDate(date) {
     if (hours == 0) {
         hours = 12
     }
-    return "Today is " + 
+    const outString = "Today is " + 
             days[date.getDay()] + 
             ", " + 
             months[date.getMonth()] +
@@ -28,4 +28,7 @@ function printPrettyDate(date) {
             date.getSeconds() +
             " " +
             AMPM
+    return outString
 }
+
+console.log(printPrettyDate(new Date()))
