@@ -8,7 +8,7 @@ function printPrettyDate(date) {
     } else {
         AMPM = "AM"
     }
-    const hours = OGHours % 12
+    let hours = OGHours % 12
     if (hours == 0) {
         hours = 12
     }
