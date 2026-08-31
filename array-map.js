@@ -13,7 +13,7 @@ function convertArrayOfObjectsToStrings(arr) {
   );
 }
 
-function concatenateStrings() {
+function concatenateStrings(strings, maxLength) {
     return strings.map((str) => {
     if (str.length > maxLength) {
       return str.slice(0, maxLength) + "...";
