@@ -3,7 +3,7 @@ function filterOutOddNumbers(arr) {
 }
 
 function filterObjectsByNameLength(arr, maxLen) {
-    return arr.filter((e) => e.name.length() <= maxLen)
+    return arr.filter((e) => e.name.length <= maxLen)
 }
 
 function compoundFilter(arr) {
