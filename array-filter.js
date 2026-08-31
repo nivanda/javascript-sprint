@@ -12,7 +12,7 @@ function compoundFilter(arr) {
 
 function checker(value) {
     let out = false
-    if (value.code > 5 && 
+    if (value.code.length > 5 && 
         !value.category.includes("special") && 
         value.price > 50 && 
         value.location != "Underground") {
