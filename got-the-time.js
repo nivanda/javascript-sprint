@@ -28,5 +28,5 @@ function printPrettyDate(date) {
             date.getSeconds() +
             " " +
             AMPM
-    return outString
+    console.log(outString)
 }
