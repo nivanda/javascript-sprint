@@ -38,6 +38,7 @@ function printPrettyDate(date) {
             ":" +
             seconds +
             " " +
-            AMPM
+            AMPM +
+            "."
     console.log(outString)
 }
