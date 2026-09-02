@@ -17,4 +17,4 @@ function concatenateObjects(arr) {
     acc[key].push(value);
     return acc;
   }, {});
-} 
+}
