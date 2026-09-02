@@ -6,10 +6,13 @@ function getTotalFromShoppingBasket(arr) {
 }
 
 function getAverageAge(arr) {
-    const arrLength = arr.length
-    let out = arr.reduce((acc, obj) => acc + obj.age, 0)
-    out = out / arrLength
-    return out
+    if (arr.length != 0) {
+        const arrLength = arr.length
+        let out = arr.reduce((acc, obj) => acc + obj.age, 0)
+        out = out / arrLength
+        return out
+    }
+    return 0
 }
 
 function concatenateObjects(arr) {
