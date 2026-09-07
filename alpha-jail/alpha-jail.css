@@ -1,0 +1,53 @@
+:root {
+    --orange: orange;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.zone {
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+}
+
+.outside {
+    left: 0;
+    background-color: #f7f7f7;
+}
+
+.inside {
+    left: 50vw;
+    background-color: #e9e9e9;
+}
+
+.character {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    /*border: 1px solid black;*/
+    pointer-events: none;
+    user-select: none;
+}
+
+.trapped {
+    background-color: var(--orange);
+}
