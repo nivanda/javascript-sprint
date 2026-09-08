@@ -1,0 +1,17 @@
+.letter-container {
+    display: flex;
+    font-size: 14px;
+}
+
+.letter-container .letter {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.letter.selected { /* we added "." instead of "-" because otherwise i would have to add another <div class="letter selected" in HTML.*/
+    font-weight: bold;
+}
